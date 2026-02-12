@@ -24,3 +24,16 @@ show();
 console.log(functionVar); // Throws ReferenceError
 console.log(functionLet); // Throws ReferenceError
 console.log(functionConst); // Throws ReferenceError
+
+{
+    let x = "myLet";
+    const y = "myConst";
+    var z = "myVar";
+
+    x="myLetReassigned";
+    y="myConstReassigned";
+    z="myVarReassigned";
+}
+x="myLetReassigned2";
+y="myConstReassigned2";
+z="myVarReassigned2";
